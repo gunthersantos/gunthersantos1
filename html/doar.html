@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Informações sobre os Autores do Site  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Plataforma especializada em Adoção e Doação de Pets" />
+  <meta name="keywords" content="Site de Adoção e Doação de Pets" />
+  <meta name="author" content="Primeira Turma FullStack SENAC-BA" />
+  <!-- fim das Informações sobre os Autores do Site  -->
+
+  <!-- Link Fonte Virtual Indie Flower do Google  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
+  <!-- fim do link Fonte Virtual do Google  -->
+
+  <!-- link bootstrap e ajax rodapé-->
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css/Footer-with-button-logo.css" />
+  <!-- fim do link bootstrap rodapé -->
+
+  <!-- Favicon compatível com Diversos Browsers -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#2d89ef" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- fim do favicon -->
+
+  <!-- link do CSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <!-- fim do link CSS -->
+
+  <!-- título da aba -->
+  <title>+AmigoPet</title>
+  <!-- fim título da aba -->
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="/"><img src="../img/logo1.png" alt="logomarca" width="180" height="180" /></a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="..#sobre-nos1">Sobre Nós</a></li>
+        <li class="adotar"><a href="adotar.html">Adotar Pet</a></li>
+        <li class="doar"><a href="#">Doar Pet</a></li>
+        <li><a href="..#faq1">FAQ</a></li>
+        <li><a href="..#parceiros1">Parceiros</a></li>
+        <li><a href="..#contato1">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <h1>Cadastro do Pet para Doação</h1>
+
+    <div class="form1">
+
+
+      <form action="" method="post" onsubmit="alert('Dados enviados com Sucesso');">
+
+        <div class="organizacao">
+          <div class="sobre-voce">
+            <h2>Sobre você</h2>
+
+            <label for="nome" class="labelInput">Nome completo:</label>
+            <input type="text" name="nome" id="nome" class="inputUser" required>
+
+            <label for="email" class="labelInput">Email:</label>
+            <input type="text" name="email" id="email" class="inputUser" required>
+
+            <label for="telefone" class="labelInput">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+
+            <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+            <input type="date" name="data_nascimento" id="data_nascimento" required>
+
+            <label for="endereco" class="labelInput">Endereço:</label>
+            <input type="text" name="endereco" id="endereco" class="inputUser" required>
+          </div>
+
+          <div class="sobre-pet">
+            <h2>Sobre o Pet</h2>
+
+            <div class="sp-organ">
+              <label for="nome" class="labelInput">Nome
+                <input type="text" name="nome" id="nome" class="inputUser" required></label>
+              <br>
+
+              <label>Espécie:
+                <br>
+                <input type="radio" id="especie" name="especie" value="cao" required>
+                <label for="especie">Cão</label>
+                <input type="radio" id="especie" name="especie" value="gato" required>
+                <label for="especie">Gato</label>
+              </label>
+
+              <br><label>Sexo:
+                <br>
+                <input type="radio" id="sexo" name="sexo" value="macho" required>
+                <label for="sexo">Macho</label>
+                <input type="radio" id="sexo" name="sexo" value="femea" required>
+                <label for="sexo">Fêmea</label>
+              </label>
+
+              <br><label>Porte:
+                <br>
+                <input type="radio" id="porte" name="porte" value="pequeno" required>
+                <label for="porte">Pequeno</label>
+                <input type="radio" id="porte" name="porte" value="medio" required>
+                <label for="porte">Médio</label>
+                <input type="radio" id="porte" name="porte" value="grande" required>
+                <label for="porte">Grande</label>
+              </label>
+
+              <p>Idade:</p>
+              <input type="radio" id="idade" name="idade" value="filhote" required>
+              <label for="idade">Até 1 ano (filhote)</label>
+              <br><input type="radio" id="idade" name="idade" value="adulto" required>
+              <label for="idade">Entre 1 e 6 anos (adulto)</label><br>
+              <input type="radio" id="idade" name="idade" value="idoso" required>
+              <label for="idade">A partir de 6 anos (idoso)</label><br>
+
+              <label for="foto">Foto:
+                <input type="file" name="foto" id="foto" accept="image/jpg, image/png"></label>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="text-pet">
+          <label for="informacao">Conte mais sobre o seu Pet:</label><br>
+          <textarea name="informacao" id="informacao" maxlength="700"></textarea>
+        </div>
+
+        <button type="submit" name="submit" value="Enviar">Enviar</button>
+
+
+      </form>
+
+    </div>
+
+  </main>
+
+  <!-- footer -->
+
+  <footer id="myFooter">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <h2 class="logo">
+            <a href="#"><img src="../img/logo1.png" alt="logomarca" width="150" height="150" /></a>
+          </h2>
+        </div>
+        <div class="col-sm-2">
+          <h5>Inicio</h5>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h5>Sobre-nós</h5>
+          <ul>
+            <li>
+              <a href="..#sobre-nos1">Informações da Empresa</a>
+            </li>
+            <li><a href="..#contato1">Contato</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-2">
+          <h5>Suporte</h5>
+          <ul>
+            <li><a href="..#faq1">FAQ</a></li>
+            <li class="tel">Telefone:</li>
+            <li class="tel">(71) 98834-6934</li>
+            <li><a href="termo.html">Termos de Uso</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <div class="social-networks">
+            <a href="https://twitter.com/amigopet7" target="-blank" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="https://web.facebook.com/MAIS-AMIGO-PET-104090138939840" target="-blank" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/maisamigopet_ssa/" target="-blank" class="instagram"><i class="fa fa-instagram"></i></a>
+          </div>
+          <a href="#" target="-blank"><button type="button" class="btn btn-default">Contato</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>© 2022 Copyright - OxenTi Stack</p>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- fim do footer -->
+  <script src="/js/mobile-navbar.js""></script>
+
+    <!-- inicio js bootstrap -->
+
+    <!-- Link js bootstrap link -->
+    <script
+      src=" https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <!-- fim do link js bootstrap -->
+</body>
+
+</html>
